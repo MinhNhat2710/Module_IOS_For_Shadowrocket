@@ -512,46 +512,6 @@
         </div>
     </div>
 
-    <!-- Donate QR Popup -->
-    <div id="donateModal" class="fixed inset-0 z-[60] hidden">
-        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeDonateModal()"></div>
-        <div class="absolute inset-0 flex items-center justify-center p-4">
-            <div class="relative w-full max-w-sm bg-white rounded-2xl shadow-2xl border border-blue-100 overflow-hidden" data-aos="zoom-in">
-                <button type="button" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-bold flex items-center justify-center" onclick="closeDonateModal()">✕</button>
-
-                <div class="p-6 text-center">
-                    <div class="mx-auto mb-3 w-12 h-12 rounded-xl flex items-center justify-center bg-gradient-to-r from-blue-500 to-sky-400">
-                        <i class="fa-solid fa-building-columns text-2xl text-white"></i>
-                    </div>
-
-                    <h2 class="text-2xl font-bold text-gray-900 mb-2" data-i18n="donate-title">Ủng hộ Admin</h2>
-                    <p class="text-sm text-gray-600 mb-4" data-i18n="donate-desc">
-                        Nếu thấy web hữu ích, bạn có thể quét mã QR để ủng hộ mình duy trì server.
-                    </p>
-
-                    <div class="inline-block mx-auto rounded-2xl p-2 border-2 border-dashed border-blue-300 bg-blue-50/70 shadow-inner mb-4">
-                        <div class="rounded-xl bg-white p-1.5 shadow-sm">
-                            <img src="https://img.vietqr.io/image/970407-99999999924-qr_only.png?amount=&addInfo=ShadowRocket&accountName=DINH%20DUY%20VINH" alt="QR ủng hộ Admin" class="w-64 max-w-full rounded-lg">
-                        </div>
-                    </div>
-
-                    <div class="text-sm text-gray-700 mb-4">
-                        <p class="text-xs text-gray-500" data-i18n="donate-thanks">Mọi sự đóng góp đều là động lực để mình tiếp tục phát triển và duy trì server.</p>
-                    </div>
-
-                    <div class="flex gap-3">
-                        <button type="button" onclick="closeDonateModal()" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-xl transition-all" data-i18n="btn-later">
-                            Để sau
-                        </button>
-                        <a href="https://img.vietqr.io/image/970407-99999999924-qr_only.png?amount=&addInfo=ShadowRocket&accountName=DINH%20DUY%20VINH" target="_blank" rel="noopener noreferrer" class="flex-1 bg-gradient-to-r from-blue-500 to-sky-400 hover:from-blue-600 hover:to-sky-500 text-black font-semibold py-2 px-4 rounded-xl transition-all inline-flex items-center justify-center" data-i18n="btn-open-qr">
-                            Mở QR
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Image Modal -->
     <div id="imageModal" class="fixed inset-0 z-50 hidden">
         <div class="absolute inset-0 bg-black/70" onclick="closeImageModal()"></div>
@@ -648,11 +608,7 @@
                 "contact-msg": "For more information, you can contact",
                 "footer-rights": "All rights reserved.",
                 
-                "donate-title": "Support Admin",
-                "donate-desc": "If you find the website helpful, you can scan the QR code to help me maintain the server.",
-                "donate-thanks": "Every contribution is a motivation for me to continue developing and maintaining the server.",
                 "btn-later": "Maybe later",
-                "btn-open-qr": "Open QR",
 
                 "toast-copied": "Copied successfully!"
             }
@@ -756,26 +712,6 @@
         function nextImage() {
             renderImageAt(__currentImageIndex + 1);
         }
-
-        // Donate QR Popup
-        function openDonateModal() {
-            var modal = document.getElementById('donateModal');
-            if (!modal) return;
-            modal.classList.remove('hidden');
-        }
-
-        function closeDonateModal() {
-            var modal = document.getElementById('donateModal');
-            if (!modal) return;
-            modal.classList.add('hidden');
-            sessionStorage.setItem('donatePopupClosed', '1');
-        }
-
-        window.addEventListener('load', function() {
-            if (!sessionStorage.getItem('donatePopupClosed')) {
-                setTimeout(openDonateModal, 700);
-            }
-        });
 
         // Keyboard navigation
         document.addEventListener('keydown', function(e) {
