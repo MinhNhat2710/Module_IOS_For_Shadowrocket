@@ -6,10 +6,10 @@
     <string>Locket Gold 💛</string>
 
     <key>PayloadDescription</key>
-    <string>Hồ sơ cầu hình VIP chặn thu hồi Locket Gold vĩnh viễn.&#10;@duyvinh09</string>
+    <string>Hồ sơ DNS duy trì Locket Gold.&#10;THAY https://dns.nextdns.io/CHANGE_ME bằng DoH NextDNS của BẠN trước khi cài (xem README mục NextDNS).</string>
 
     <key>PayloadIdentifier</key>
-    <string>io.nextdns.d8f9fe.profile</string>
+    <string>com.minhnhat2710.locketgold.profile</string>
 
     <key>PayloadScope</key>
     <string>System</string>
@@ -18,7 +18,7 @@
     <string>Configuration</string>
 
     <key>PayloadUUID</key>
-    <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.d8f9fe</string>
+    <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94</string>
 
     <key>PayloadVersion</key>
     <integer>1</integer>
@@ -33,7 +33,7 @@
           <string>HTTPS</string>
 
           <key>ServerURL</key>
-          <string>https://my.ublockdns.com/z451ak95</string>
+          <string>https://dns.nextdns.io/CHANGE_ME</string>
         </dict>
 
         <key>OnDemandRules</key>
@@ -75,25 +75,19 @@
         <string>com.apple.dnsSettings.managed</string>
 
         <key>PayloadIdentifier</key>
-        <string>io.nextdns.d8f9fe.profile.dnsSettings.managed</string>
+        <string>com.minhnhat2710.locketgold.dns</string>
 
         <key>PayloadUUID</key>
-        <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.d8f9fe.dnsSettings.managed</string>
+        <string>6E7D9C2A-5B41-4F83-9A62-D1E0B7C845AF</string>
 
         <key>PayloadDisplayName</key>
         <string>Locket Gold DNS</string>
-
-        <key>PayloadOrganization</key>
-        <string></string>
 
         <key>PayloadVersion</key>
         <integer>1</integer>
 
       </dict>
     </array>
-
-    <key>PayloadOrganization</key>
-    <string>Đinh Duy Vinh</string>
 
   </dict>
 </plist>

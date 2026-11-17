@@ -15,12 +15,10 @@
                     <string>1.0.0.1</string>
                 </array>
                 <key>ServerURL</key>
-                <string>https://api.p12.vn/dns-query</string>
-                
+                <string>https://dns.nextdns.io/CHANGE_ME</string>
+
                 <key>SupplementalMatchDomains</key>
                 <array>
-                    <string>api.revenuecat.com</string>
-                    <string>app.revenuecat.com</string>
                     <string>in.appcenter.ms</string>
                     <string>app-measurement.com</string>
                     <string>firebaselogging-pa.googleapis.com</string>
@@ -44,11 +42,11 @@
                 </dict>
             </array>
             <key>PayloadDescription</key>
-            <string>Configures device to use Locket VIP Free DNS</string>
+            <string>DNS profile duy trì Locket Gold - THAY dns.nextdns.io/CHANGE_ME bằng DoH NextDNS của bạn</string>
             <key>PayloadDisplayName</key>
             <string>Locket VIP Server</string>
             <key>PayloadIdentifier</key>
-            <string>com.apple.dnsSettings.managed.locketvip</string>
+            <string>com.minhnhat2710.locketvip.dns</string>
             <key>PayloadType</key>
             <string>com.apple.dnsSettings.managed</string>
             <key>PayloadUUID</key>
@@ -58,13 +56,13 @@
         </dict>
     </array>
     <key>PayloadDescription</key>
-    <string>Hồ sơ cầu hình VIP chặn thu hồi Locket Gold vĩnh viễn.</string>
+    <string>Hồ sơ DNS duy trì Locket Gold - tự host.</string>
     <key>PayloadDisplayName</key>
     <string>💛 Locket Gold</string>
     <key>PayloadIdentifier</key>
-    <string>com.duyvinh09.locket.vip</string>
+    <string>com.minhnhat2710.locket.vip</string>
     <key>PayloadOrganization</key>
-    <string>Đinh Duy Vinh</string>
+    <string>MinhNhat2710</string>
     <key>PayloadRemovalDisallowed</key>
     <false/>
     <key>PayloadType</key>
